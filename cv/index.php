@@ -1,0 +1,627 @@
+<!-- <?php include './logs/tracage.inc.php'?> -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>CV de Jéros VIGAN : Data analyst et Data spatial</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="author" content="jerosweb.com / Jeros VIGAN" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Leaflet, routing,SIG , SVG, Postgis, python, cmder">
+    <meta name="description" content="CV de jéros VIGAN , Data analyst et Data spatial">
+    <link rel="stylesheet" href="./cv/style.css">
+
+    <!-- Google tag (gtag.js) 21/12/2023-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7V3VDCF3PS"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7V3VDCF3PS');
+    </script>
+
+</head>
+
+<body id="control">
+    <div id="tsparticles_head"></div>
+    <canvas id="three"></canvas>
+
+    <!-- header -->
+    <header>
+        <h1 id="typewriter">Mon Portofolio ! </h1>
+    </header>
+
+    <!-- section 1 -->
+    <section>
+        <div class="photo">
+            <!-- <img src="./img/photo1.jpg" alt="Ma photo de profil"> -->
+        </div>
+        <div class="prez">
+            <h2>Qui suis-je ?</h2>
+            <p>Administrateur SI – Développeur WebMapping / Web – Data Analyst (<span class="annee_experience"></span> ans).</p>
+            <div class="prez_imag">
+                <img src="./cv/img/wordcloud.svg" alt="nuage de mots" style=" height:15em;" id="image_nuage">
+            </div>
+            <!-- <a href="./pdf_cv/CV_jeros_vigan.pdf" download>Télécharger mon CV</a> -->
+        </div>
+        <div class="contact">
+            <h2>Informations de contact</h2>
+            <div class="contact-flex">
+                <p>Nom : </p>
+                <p>VIGAN Jéros</p>
+            </div>
+            <div class="contact-flex">
+                <p>Adresse : </p>
+                <p>31100 TOULOUSE</p>
+            </div>
+            <div class="contact-flex">
+                <p>Téléphone :</p>
+                <p>06 xx xx xx xx</p>
+            </div>
+            <div class="contact-flex">
+                <p>Mail : </p>
+                <p><a href="mailto:jerosvigan@gmail.com">jerosvigan@gmail.com</a></p>
+            </div>
+            <div class="contact-flex">
+                <p>Permis :</p>
+                <p>B</p>
+            </div>
+            <div class="contact-flex">
+                <p>Mon site :</p>
+                <p> <strong><a href="https://www.jerosweb.com/" target="_bank_jeros">www.jerosweb.com</a></strong> </p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/jeros.vigan" target="_bank_facebook"><img src="./cv/img/fb.png"
+                        alt="Logo Fb"></a>
+                <a href="https://www.kaggle.com/jrosvigan" target="_bank_kaggle"><img src="./cv/img/Kaggle_logo.png"
+                        alt="Logo kaggle"></a>
+                <a href="https://www.linkedin.com/in/j%C3%A9ros-vigan-164a5b160/" target="_bank_linkedin"><img
+                        src="./cv/img/lk.png" alt="Logo Lk"></a>
+                <a href="https://github.com/zedauna" target="_bank_git"><img src="./cv/img/github.svg"
+                        alt="Logo githurb"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 4 -->
+    <section>
+        <h2>Compétences</h2>
+        <h3 class="h3gauche"> < Professionnelles /></h3>
+        <br><br>
+        <div class="comp">
+            <p><strong>JavaScript<i> (ES6)</i></strong></p>
+            <div class="conteneur-barre"><span class="barre c100"></span></div>
+        </div>
+        <div class="comp">
+            <p><strong>Python / POO</strong></p>
+            <div class="conteneur-barre"><span class="barre c100"></span></div>
+        </div>
+        <div class="comp">
+            <p><strong>PHP / POO</strong></p>
+            <div class="conteneur-barre"><span class="barre c95"></span></div>
+        </div>
+        <div class="comp">
+            <p><strong>GO<i>(Golang)</i></strong></p>
+            <div class="conteneur-barre"><span class="barre c95"></span></div>
+        </div>
+        <div class="comp">
+            <p><strong>TypeScript</strong></p>
+            <div class="conteneur-barre"><span class="barre c95"></span></div>
+        </div>
+        <div class="comp">
+            <p>PostgreSQL / PostGis</p>
+            <div class="conteneur-barre"><span class="barre c100"></span></div>
+        </div>
+        <div class="comp">
+            <p>Tailwing / Bootstrap</p>
+            <div class="conteneur-barre"><span class="barre c100"></span></div>
+        </div>
+        <div class="comp">
+            <p>R / Rstudio</p>
+            <div class="conteneur-barre"><span class="barre c95"></span></div>
+        </div>
+        <div class="comp">
+            <p>FME / Talend</p>
+            <div class="conteneur-barre"><span class="barre c95"></span></div>
+        </div>
+        <div class="comp">
+            <p>SVG / Leaflet</p>
+            <div class="conteneur-barre"><span class="barre c90"></span></div>
+        </div>
+        <div class="comp">
+            <p>ESRI / ArcPY <i></i></p>
+            <div class="conteneur-barre"><span class="barre c85"></span></div>
+        </div>
+        <div class="comp">
+            <p>Qgis</p>
+            <div class="conteneur-barre"><span class="barre c85"></span></div>
+        </div>
+        <div class="comp">
+            <p>React.js / Vite.js <i></i></p>
+            <div class="conteneur-barre"><span class="barre c95"></span></div>
+        </div>
+         <div class="comp">
+            <p>GIT / GITHUB / NETLITY</p>
+            <div class="conteneur-barre"><span class="barre c95"></span></div>
+        </div>
+        <h3 class="h3gauche">< Personnelles /></h3>
+        <div class="comp2">
+            <p>Créativité</p>
+            <p>95%</p>
+            <div class="conteneur-barre2"><span class="barre c95"></span></div>
+        </div>
+        <div class="comp2">
+            <p>Adaptation</p>
+            <p>95%</p>
+            <div class="conteneur-barre2"><span class="barre c95"></span></div>
+        </div>
+        <div class="comp2">
+            <p>Sérieux</p>
+            <p>100%</p>
+            <div class="conteneur-barre2"><span class="barre c100"></span></div>
+        </div>
+        <div class="comp2">
+            <p>Pédagogie</p>
+            <p>95%</p>
+            <div class="conteneur-barre2"><span class="barre c95"></span></div>
+        </div>
+    </section>
+
+    <!-- section 2 -->
+    <section>
+        <h2>Actualités -- Projets en cours !</h2>
+        <div class="exp">
+            <div class="exp-logo">
+                <a href="#"><img src="./cv/img/projet.png" alt="Logo projet"></a>
+            </div>
+            <div class="exp-info">
+                <h3><b>Développeur Python/JavaScript/PHP/Golang</b> </h3>
+                <h4>
+                    <p>Prestations géomatiques et web : conseil, développement et formation Webmapping, SIG bureautique.
+                    </p>
+                    <p>Développement des applications WebSIG compilées sur www.jerosweb.com.</p>
+                    <p><i>SIG, PHP, JavaScript, Python, SVG, Json, GitHub, Data Viz, Leaflet, Golang </i></p>
+                </h4>
+                <h4>2021 - 2025</h4>
+            </div>
+            <div class="exp-desc" style="margin-top: 0.2em;">
+                <div>
+                    <p>
+                        <ul style="font-style: italic;margin-left:2em;margin-top:1em;">
+                            <li>Définition du MCD avec Looping </li>
+                            <li>Base de données spatiales avec PostgreSQL / PostGIS</li>
+                            <li>Production des fichiers SVG avec du PHP</li>
+                            <li>Les libraires géospatiales : Geolib.js et Turf.js</li>
+                            <li>Les languages : HTML , CSS, JavaScript, PHP, Golang, React.js,vite.js</li>
+                            <li>Frontend : React.js,vite.js</li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        <a href="index.php?page=svg" target="_bank_svg"><button
+                                class="ChangeColor1 ChangeColor">CONSULTER : SIG WEBMAP SVG ✔️</button></a>
+
+                        <a href="index.php?page=svg_v2" target="_bank_svg_avance"><button
+                                class="ChangeColor2 ChangeColor">CONSULTER : SIG WEBMAP SVG AVANCE ✔️</button></a>
+
+                        <a href="index.php?page=leaflet" target="_bank_leaflet"><button
+                                class="ChangeColor3 ChangeColor">CONSULTER : SIG WEBMAP LEAFLET AVANCE ✔️</button></a>
+                    </p>
+                    <p>
+                        <a href="index.php?page=globe_1" target="_bank_globe"><button
+                                class="ChangeColor4 ChangeColor">CONSULTER : GLOBE 3D ✔️</button></a>
+
+                        <a href="index.php?page=globe_2" target="_bank_globe_avance"><button
+                                class="ChangeColor5 ChangeColor">CONSULTER : GLOBE 3D AVANCE ✔️</button></a>
+
+                        <a href="index.php?page=nuage_mots" target="_bank_word_cloud"><button
+                                class="ChangeColor6 ChangeColor">CONSULTER : NUAGE DE MOTS ✔️</button></a>
+                    </p>
+                    <p>
+                        <a href="https://alpha-spacex-news.netlify.app/" target="_bank_spacex"><button
+                                class="ChangeColor10 ChangeColor">CONSULTER : ALPHA-SPACEX 🌎</button></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 2 -->
+    <section>
+        <h2>Parcours Professionnelles</h2>
+        <div class="exp">
+            <div class="exp-logo">
+                <a href="#"><img src="./cv/img/onf_logo.svg_.png" alt="Logo onf"></a>
+            </div>
+            <div class="exp-info">
+                <h3><b>Administrateur de données SI / Développeur SIG à l’Office National des Forêts (ONF) de
+                        Toulouse</b></h3>
+                <h4>Administrateur des données (DBA), Développeur SIG et Développeur Python
+                </h4>
+                <h4>2022 - 2100 </h4>
+            </div>
+
+            <div class="exp-desc" style="margin-top: 0.6em;">
+                <p>
+                    <ul style="font-style: italic;margin-left:2em;margin-top:1em;">
+                        <li>Analyse du flux des données et Cartographie du SI</li>
+                        <li>Expertise de la cohérence des données dans l'utilisation des applicatifs "Metier SI"</li>
+                        <li>Analyse critique (quantité / qualité) des données SI</li>
+                        <li>Élaboration des états Bussiness Object (BO) </li>
+                        <li>Production des shapefiles ou Géodatabases (GDB / ArcSDE) par programmation avec Arcpy / FME
+                        </li>
+                        <li>Programmation des formulaires d'enquêtes sur Arcgis Survey123 / XlsForm</li>
+                        <li>Portail ESRI ONF (WebCarto, Dashboards), ArcPy, AGOL, Api ArcGIS python</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="exp">
+            <div class="exp-logo">
+                <a href="#"><img src="./cv/img/onf_logo.svg_.png" alt="Logo onf"></a>
+            </div>
+            <div class="exp-info">
+                <h3><b>Spécialiste SIG à l’Office National des Forêts (ONF) de Toulouse</b></h3>
+                <h4>Géomaticien, Administrateur des données, Développeur Webmapping et Développeur Python
+                </h4>
+                <h4>2021 - 2022 </h4>
+            </div>
+
+            <div class="exp-desc" style="margin-top: 0.6em;">
+                <p>
+                    <ul style="font-style: italic;margin-left:2em;margin-top:1em;">
+                        <li>Définition des modèles de données (MDD) </li>
+                        <li>Examen et Visualisation des couches sur Arcgis , Arcgis Pro</li>
+                        <li>ETL et Consolidation des fichiers Shapefiles sur Python</li>
+                        <li>Conversion des fichiers (xlsx , csv, ...) en Shapefile sur Python</li>
+                        <li>Géolocalisation à partir des adresses sur Python avec api de base de donnée data.gouvr.fr
+                        </li>
+                        <li>Production des shapefiles ou Géodatabases (GDB) par programmation avec Arcpy</li>
+                        <li>Programmation des formulaires d'enquêtes sur Arcgis Survey123 / XlsForm</li>
+                        <li>Importation et Analyse des données sur PostgreSQL</li>
+                        <li>Cadastre (MAJIC, EDIGEO) : Arcopole, FME, QGIS, Postgres / Postgis, Python, Bash</li>
+                        <li>Portail ESRI ONF (WebCarto, Dashboards), ArcPy, AGOL, Api ArcGIS python</li>
+                        <li>Automatisation des Reportings : Python, jinja2, HTML, CSS</li>
+                        <li>Automatisation des Sauvergardes / Restitutions : Python, Geojson, shapefiles, Excel</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="exp">
+            <div class="exp-logo">
+                <a href="#"><img src="./cv/img/onf_logo.svg_.png" alt="Logo onf"></a>
+            </div>
+            <div class="exp-info">
+                <h3><b>Administrateur des données à l’Office National des Forêts (ONF) de Toulouse</b></h3>
+                <h4>Géomaticien , Sigiste , Alternance </h4>
+                <h4>2020-2021</h4>
+            </div>
+
+            <div class="exp-desc" style="margin-top: 0.6em;">
+                <ul style="font-style: italic;margin-left:2em;margin-top:1em;">
+                    <li>Définition des modèles de données (MDD) </li>
+                    <li>Modèle Conceptuel de données (MCD) </li>
+                    <li>ETL des données brutes avec Python</li>
+                    <li>ETL des données géographiques en utilisant FME</li>
+                    <li>Réalisation des cartes propriétaires TPK en utilisant ARCGIS PRO</li>
+                    <li>Analyse de comparaison avec R ou Python</li>
+                    <li>Examen , Visualisation des couches et Production des cartes sur Arcgis , Arcgis Pro</li>
+                    <li>Importation et Analyse des données sur PostgreSQL</li>
+                    <li>Portail ESRI ONF (WebCarto, Dashboards), ArcPy, AGOL, Api ArcGIS python</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="exp">
+            <div class="exp-logo">
+                <a href="#"><img src="./cv/img/projet.png" alt="Logo projet"></a>
+            </div>
+            <div class="exp-info">
+                <h3>
+                    <b>Webmapping – Développeur PHP/JavaScript</b>
+                </h3>
+                <h4>
+                    <p><i>Développement d’itinéraire, de gestion et de suivi des apprentis (ISA).</i></p>
+                    <p><i>Conception MCD, MLD et administration de la base de données spatiales.</i></p>
+                    <p>LP SIGWEB</p>
+                </h4>
+                <h4>2020-2021</h4>
+            </div>
+            <div class="exp-desc">
+                <p style="font-style: italic;"> HTML, CSS, JavaScript (Leaflet, Ajax, AnyChart) , PHP , PostgreSQL /
+                    PostGIS , Data Viz</p>
+            </div>
+        </div>
+
+        <div class="exp">
+            <div class="exp-logo">
+                <a href="#"><img src="./cv/img/projet.png" alt="Logo projet"></a>
+            </div>
+            <div class="exp-info">
+                <h3>
+                    <b>Étude du fonctionnement hydrologique des tourbes face aux changements climatiques</b>
+                </h3>
+                <h4>
+                    <p><i>Conception MCD, MLD et administration de la base de données.</i></p>
+                    <p><i>Modélisation et Visualisation des données avec R / Rstudio.</i></p>
+                    <p>Data Analyst - Administrateur Base De Données</p>
+                </h4>
+                <h4>2019-2020</h4>
+            </div>
+            <div class="exp-desc">
+                <p style="font-style: italic;">R, Talend, SQL/PLPGSQL, ArcGIS, Data Viz </p>
+                <div class="projet">
+                    <a href="https://github.com/zedauna/Projet-ONF-R-TALEND-SQL/raw/master/Compte%20rendu%20du%20projet.pdf"
+                        target="_bank_projet_git"><button class="ChangeColor7 ChangeColor">CONSULTER LE PROJET
+                            ✔️</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="exp">
+            <div class="exp-logo">
+                <a href="#"><img src="./cv/img/projet.png" alt="Logo projet"></a>
+            </div>
+            <div class="exp-info">
+                <h3><b>Projet d'étude Sensométrique</b></h3>
+                <h4>
+                    <p><i>Modélisation et Visualisation des données avec R / Rstudio.</i></p>
+                    <p><i>Conception des data visualisations</i></p>
+                    <p>Data Analyst</p>
+                </h4>
+                <h4>2019-2020</h4>
+            </div>
+            <div class="exp-desc">
+                <p style="font-style: italic;">R, JavaScript , Agronomie , Gagnant concours Posters 👉👉 <a
+                        href="https://www.facebook.com/IutStidCarcassonne/photos/a.1044526862398061/1434217843428959"
+                        target="_bank_face_icon"><button class="ChangeColor8 ChangeColor">Consulter ici ✔️</button></a>
+                </p>
+                <div class="projet">
+                    <a href="https://github.com/zedauna/PROJET-SENSORIEL-R-DATAVIZ-POSTER"
+                        target="_bank_git_icon"><button class="ChangeColor9 ChangeColor">CONSULTER LE PROJET
+                            ✔️</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 3 -->
+    <section>
+        <h2>Formations</h2>
+        <div class="exp">
+            <div class="exp-logo">
+                <a href="#"><img src="./cv/img/corse_Pascal_Paoli.svg.png" alt="Logo corse"></a>
+            </div>
+            <div class="exp-info">
+                <h3>Master en Sciences Eau et Environnement (MSEE) </h3>
+                <h4>2016-2018</h4>
+            </div>
+            <div class="exp-desc">
+                <p style="color:tomato">Faculté des Sciences de l’Université de Corse :</p>
+                <p>Analyse exploratoire : ACP, AFC, AFCM</p>
+                <p>Études et réalisation de diagnostics territoriaux</p>
+                <p>Études des plans de prévention des risques</p>
+                <p>Réalisation de diagnostiques hydro-morphologiques de cours d’eau</p>
+                <p>Courbe de niveau (Bassins versant), Gestion de l'eau (quantité et qualité)</p>
+                <p>Dimensionnement d’un réseau d’AEP à partir des eaux de surface</p>
+                <p><b>Logiciels :</b> Arcgis, R/Rstudio , Epanet , Autocad , Géoportail</p>
+            </div>
+        </div>
+        <div class="exp">
+            <div class="exp-logo">
+                <a href="#"><img src="./cv/img/LogoUni.png" alt="Logo Montpellier"></a>
+            </div>
+            <div class="exp-info">
+                <h3>Licence Pro Métiers de l’informatique : Applications web Parcours : Système d'information
+                    géographique orienté WEB (SIGWEB)</h3>
+                <h4>2020-2021</h4>
+            </div>
+            <div class="exp-desc">
+                <p style="color:tomato">IUT de Carcassonne de l’Université de Perpignan :</p>
+                <p><b>Data spatial : </b> Cartes thématiques, Analyses cartographiques et statistiques</p>
+                <p><b>BDD : </b> Modèle Conceptuel des Données (MCD) , PostgreSQL / Postgis , MySQL</p>
+                <p><b>Conception d’applications informatiques WEB :</b> HTML, CSS, Javascript, PHP, SVG et Leaflet</p>
+                <p><b>Environnement WEB : </b>Google maps, Géoportail, Leaflet, Géoserver…</p>
+                <p><b>Logiciels :</b> Arcgis, Arcgis Pro , Qgis , MapInfo , Arcpy , Python , FME , R/Rstudio , SAS ,
+                    Python , PostgreSQL , Looping</p>
+            </div>
+        </div>
+
+        <div class="exp" style="display: none;">
+            <div class="exp-logo">
+                <a href="#"><img src="./cv/img/LogoUni.png" alt="Logo Montpellier"></a>
+            </div>
+            <div class="exp-info">
+                <h3>DUT Statistique et Informatique Décisionnelle (STID)</h3>
+                <h4>2019-2020</h4>
+            </div>
+            <div class="exp-desc">
+                <p style="color:tomato">IUT de Carcassonne de l’Université de Perpignan :</p>
+                <p><b>ETL : </b> Collecter/extraire les données, les transformer et les stoker à l'aide de traitements
+                    informatiques</p>
+                <p><b>BDD :</b> Modèle Conceptul des Données (MCD) , PostgreSQL , MySQL</p>
+                <p><b>Traitements Statistiques : </b>Analyse Univariée, Analyse Bivariée , Analyse Exploratoire (ACP,
+                    AFC, AFCM , AFD) et Data Mining, ...</p>
+                <p><b>Inférentielle Statistiques : </b>Etude de la normalité / Test de conformité , Test de student ,
+                    Test de Fisher , Test de chi-deux , ...</p>
+                <p><b>Sondage : </b>Échantillonnage, Méthode stratifié , Estimations</p>
+                <p><b>Visualisation : </b> Produire des outils d'aide à la décision (tableaux de bord, reporting, Data
+                    Viz, prévisions, etc.)</p>
+                <p><b>Logiciels :</b> Arcgis, Talend , R/Rstudio , SAS , Python , PostgreSQL , Looping , Néo4J</p>
+            </div>
+        </div>
+
+        <div class="exp" style="display: none;">
+            <div class="exp-logo">
+                <a href="#"><img src="./cv/img/logo_universite_montpellier.png" alt="Logo Montpellier"></a>
+            </div>
+            <div class="exp-info">
+                <h3>DU Traitement de l’informatique et intelligence économique</h3>
+                <h4>2018-2019</h4>
+            </div>
+            <div class="exp-desc">
+                <p style="color:tomato">Faculté des Sciences de l’Université de Montpellier :</p>
+                <p>Data Manning, statistiques, visualisation</p>
+            </div>
+        </div>
+        <div class="exp">
+            <div class="exp-logo">
+                <a href="#"><img src="./cv/img/fsa-uac.jpg" alt="Logo FSA"></a>
+            </div>
+            <div class="exp-info">
+                <h3>Licence Pro en Sciences Agronomiques spécialité Génie rural
+                    et mécanisation agricole </h3>
+                <h4>2010-2013</h4>
+            </div>
+            <div class="exp-desc">
+                <p style="color:tomato">Faculté des Sciences Agronomiques (FSA) de l’Université d’Abomey Calavi :</p>
+                <p>Analyse exploratoire des données : ACP, AFC, AFCM, SIG</p>
+                <p>Aménagement et Mise en valeur durable d’un périmètre rizicole : Hydrogéologie appliquée, Irrigation ;
+                    Drainage</p>
+                <p>Dimensionnement et gestion des bassins versants : Autocad, Epanet</p>
+                <p><b>Logiciels :</b> Arcgis, R/Rstudio , Epanet , Autocad , Visual Basic , Gimp</p>
+            </div>
+        </div>
+
+        <div class="exp">
+            <div class="exp-logo">
+                <a href=""><img src="./cv/img/dd.png" alt="Bac scientifique"></a>
+            </div>
+            <div class="exp-info">
+                <h3>Bac D option scientifique</h3>
+                <h4>2010</h4>
+            </div>
+            <div class="exp-desc">
+                <p>Mention : Très Bien</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section 5 -->
+    <section>
+        <h2>Certifications / Jobs </h2>
+        <h3 class="h3gauche">Certifications</h3>
+        <div class="exp">
+            <div class="exp-logo">
+                <a href="#"><img src="./cv/img/logo_anssi.png" alt="Logo de ANSSI"></a>
+            </div>
+            <div class="exp-info">
+                <h3>Attestation de l’Agence Nationale de Sécurité des Systèmes d’Information (ANSSI)</h3>
+                <h4>MOOC SecNumacadémie</h4>
+                <h4>2019</h4>
+            </div>
+
+            <div class="exp-desc" style="margin-top: 0.6em;">
+                <p>Sécurité du numérique, Notions de base de la sécurité des systèmes d’information (SSI)</p>
+            </div>
+        </div>
+
+        <div class="exp">
+            <div class="exp-logo">
+                <a href="#"><img src="./cv/img/c2i.png" alt="Logo Certificat informatique et Internet "></a>
+            </div>
+            <div class="exp-info">
+                <h3>Certificat informatique et Internet (C2i) dans la maitrise des TIC</h3>
+                <h4></h4>
+                <h4>2019</h4>
+            </div>
+
+            <div class="exp-desc" style="margin-top: 0.6em;">
+                <p></p>
+            </div>
+        </div>
+
+        <h3 class="h3gauche">Jobs étudiants</h3>
+
+        <div class="exp">
+            <div class="exp-logo">
+                <!-- <a href="#"><img src="" alt="Logo de LegalPlace"></a> -->
+            </div>
+            <div class="exp-info">
+                <h3>Tuteur des étudiants</h3>
+                <h4>Université de Perpignan via DOMITIA</h4>
+                <h4>2021</h4>
+            </div>
+
+            <div class="exp-desc" style="margin-top: 0.6em;">
+                <p>Aider à résoudre les difficultés des autres étudiants, par accompagnement, par conseils </p>
+            </div>
+        </div>
+
+        <div class="exp">
+            <div class="exp-logo">
+                <!-- <a href="#"><img src="" alt="Logo de LegalPlace"></a> -->
+            </div>
+            <div class="exp-info">
+                <h3>Opérateur de production chez Élis Midi-Pyrénées</h3>
+                <h4>2 rue Isabelle Eberhardt, Z.A.C. de Garonne B.P. 32172, 31086 Toulouse</h4>
+                <h4>2020</h4>
+            </div>
+
+            <div class="exp-desc" style="margin-top: 0.6em;">
+                <p>Blanchisserie, Laverie, Pressing </p>
+            </div>
+        </div>
+
+        <div class="exp">
+            <div class="exp-logo">
+                <!-- <a href="#"><img src="" alt="Logo de LegalPlace"></a> -->
+            </div>
+            <div class="exp-info">
+                <h3>Employé polyvalent restauration chez SARL GUITHI</h3>
+                <h4>5 Quai Georges Clemenceau - 34250 Palavas-les-flots</h4>
+                <h4>2019</h4>
+            </div>
+
+            <div class="exp-desc" style="margin-top: 0.6em;">
+                <p>Serveur / Commis / Plongeur</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- section 6 -->
+    <section>
+        <h2>Centres d'intérêt</h2>
+        <figure class="interet">
+            <img src="./cv/img/Kaggle_logo.png" alt="kaggle competitions">
+            <figcaption>Kaggle compétitions </figcaption>
+        </figure>
+        <figure class="interet">
+            <img src="./cv/img/cuisine.jpg" alt="Cuisine">
+            <figcaption>Cuisine</figcaption>
+        </figure>
+        <figure class="interet">
+            <img src="./cv/img/cinema.jpg" alt="Cinéma">
+            <figcaption>Cinéma</figcaption>
+        </figure>
+        <figure class="interet">
+            <img src="./cv/img/danse.jpg" alt="Danse">
+            <figcaption>Danse</figcaption>
+        </figure>
+    </section>
+
+    <!-- footer -->
+    <footer id="tsparticles_foot">
+        <p><a href="https://www.jerosweb.com">©Jeros VIGAN </a><span class="year"></span></p>
+        <p> site : jerosweb.com </p>
+        <p> Contact : zedauna@programmer.net</p>
+        <p>
+            <div class="form-check form-switch" id="form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked">ON/OFF 👉 Animations</label>
+            </div>
+        </p>
+    </footer>
+    <script src="./cv/assets/three.min.js"></script>
+    <script src="./cv/assets/OrbitControls.js"></script>
+    <script src="./cv/assets/tsparticles.min.js"></script>
+    <script src="./cv/assets/typewriter_core.js"></script>
+    <script src="./cv/script.min.js"></script>
+    <script src="./cv/app.min.js"></script>
+    <!-- <script type="module" src="./cv/assets/js/main.min.js"></script> -->
+</body>
+
+</html>
