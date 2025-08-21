@@ -1,0 +1,20 @@
+import './style.css';
+import { router } from './router.js';
+import './components/footer.js';
+import './components/legende.js';
+import './components/menuAccessibilite.js';
+import './components/menuAccessibiliteLeaflet.js';
+import './components/menuCallFunctionLeaflet.js';
+import './components/menuCallFunctionSvg.js';
+import './components/menuCallFunctionSvgAvance.js';
+import './components/menuNavBarSvg.js';
+import './components/menuNavBarSvgAvance.js';
+import './components/modalAideLeaflet.js';
+import './components/modalAideSvg.js';
+import './components/position.js';
+import './components/positionAvance.js';
+import './components/positionLeaflet.js';
+import './components/sidebarFunction.js';
+import './components/sidebarFunctionLeaflet.js';
+import './components/svgController.js';
+
