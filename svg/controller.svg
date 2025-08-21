@@ -1,0 +1,43 @@
+<svg id="controller_svg" class="draggable" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50">
+	<style>
+        .compass {
+            fill: #fff;
+            stroke: #000;
+            stroke-width: 1;
+        }
+
+        .button {
+            fill: #225EA8;
+            stroke: #0C2C84;
+            stroke-width: 0.5;
+            stroke-miterlimit:6;
+            stroke-linecap: round;
+        }
+
+        .button:hover {
+            stroke-width: 1;
+        }
+
+        .plus-minus {
+            fill: #fff;
+            pointer-events: none;
+        }
+
+    </style>
+
+	<circle cx="25" cy="25" r="21" fill="white" opacity="0.75" />
+
+	<path class="button" id="up-button" d="M25 5 l6 10 a20 35 0 0 0 -12 0z" />
+	<path class="button" id="left-button" d="M5 25 l10 -6 a35 20 0 0 0 0 12z" />
+	<path class="button" id="down-button" d="M25 45 l6 -10 a20, 35 0 0,1 -12,0z" />
+	<path class="button" id="right-button" d="M45 25 l-10 -6 a35 20 0 0 1 0 12z" />
+
+	<circle class="compass" cx="25" cy="25" r="10" />
+	<circle class="button" cx="25" cy="20.5" r="4" id="zoom-out-button" />
+	<circle class="button" cx="25" cy="29.5" r="4" id="zoom-in-button" />
+	
+	<rect class="plus-minus" x="23" y="20" width="4" height="1" />
+	<rect class="plus-minus" x="23" y="29" width="4" height="1" />
+	<rect class="plus-minus" x="24.5" y="27.5" width="1" height="4" />
+
+</svg>
