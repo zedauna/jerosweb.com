@@ -1,5 +1,5 @@
 class ModalAideSvg extends HTMLElement {
-  connectedCallaBack() {
+  connectedCallback() {
     this.innerHTML = `<!-- Modal -->
 
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -104,4 +104,4 @@ class ModalAideSvg extends HTMLElement {
   }
 }
 
-customElements.define('app-modal-aide-svg',ModalAideSvg);
+customElements.define("app-modal-aide-svg", ModalAideSvg);

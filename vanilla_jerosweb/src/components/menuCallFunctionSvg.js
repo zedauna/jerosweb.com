@@ -1,5 +1,5 @@
 class MenuCallFunctionSvg extends HTMLElement {
-  menCallFunctionSvgCallaback() {
+  connectedCallback() {
     this.innerHTML = `<div class="row">
     <div class="col-6">
         <nav class="navbar navbar-light blue lighten-5 justify-content-start gest_responsive">

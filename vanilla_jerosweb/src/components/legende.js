@@ -1,6 +1,6 @@
 class Legende extends HTMLElement {
-    legendeCallack(){
-        this.innerHTML=`
+  connectedCallback() {
+    this.innerHTML = `
             <div class="col-12 sidebar">
         <div class="row align-items-end justify-content-between p-1 m-1 gest_responsive">
             <div class="col-4 w-50 p-2">
@@ -60,8 +60,8 @@ class Legende extends HTMLElement {
             </div>
         </div>
     </div>
-        `
-    }
+        `;
+  }
 }
 
-customElements.define('app-legende',Legende)
+customElements.define("app-legende", Legende);

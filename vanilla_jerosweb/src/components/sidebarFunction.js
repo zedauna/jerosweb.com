@@ -1,5 +1,5 @@
 class SidebarFunction extends HTMLElement {
-  sidebarFunctionCallback() {
+  connectedCallback() {
     this.innerHTML = `<div class="row justify-content-end gest_responsive">
             <!-- rechercher -->
             <div class=" form-group perso_div w-70 item_off" id='active_rech'>

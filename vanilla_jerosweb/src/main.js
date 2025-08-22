@@ -1,5 +1,6 @@
 import './style.css';
 import { router } from './router.js';
+import './components/home.js';
 import './components/footer.js';
 import './components/legende.js';
 import './components/menuAccessibilite.js';
@@ -17,4 +18,3 @@ import './components/positionLeaflet.js';
 import './components/sidebarFunction.js';
 import './components/sidebarFunctionLeaflet.js';
 import './components/svgController.js';
-

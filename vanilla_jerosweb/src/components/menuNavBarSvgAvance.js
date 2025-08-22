@@ -1,6 +1,6 @@
 class MenuNavbarSvgAvance extends HTMLElement {
-    connectedCallback( ){
-        this.innerHTML=`<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(92, 92, 194);">
+  connectedCallback() {
+    this.innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(92, 92, 194);">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">@Jerosweb.Com</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -35,8 +35,8 @@ class MenuNavbarSvgAvance extends HTMLElement {
             </ul>
         </div>
     </div>
-</nav>`
-    }
+</nav>`;
+  }
 }
 
-customElements.define('app-menu-navbar-svg-avance',MenuNavbarSvgAvance);
+customElements.define("app-menu-navbar-svg-avance", MenuNavbarSvgAvance);

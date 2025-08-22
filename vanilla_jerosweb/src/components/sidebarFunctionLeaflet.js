@@ -1,5 +1,5 @@
 class SidebarFunctionLeaflet extends HTMLElement {
-    sidebarFunctionLeaflet () {
+    connectedCallback() {
         this.innerHTML=`<div class="row justify-content-start gest_responsive">
         <div class="form-group perso_div w-70 item_off" id='active_distance'>
             <!-- distance -->

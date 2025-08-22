@@ -15,4 +15,4 @@ class MenuCallFunctionLeaflet extends HTMLElement{
 </div>`
     }
 }
-customElements('app-menu-call-function-leaflet',MenuCallFunctionLeaflet);
+customElements.define('app-menu-call-function-leaflet',MenuCallFunctionLeaflet);

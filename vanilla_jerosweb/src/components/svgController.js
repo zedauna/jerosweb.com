@@ -1,7 +1,7 @@
 // svg-controller.js
 class SvgController extends HTMLElement {
   connectedCallback() {
-    fetch('/public/svg/controller.svg')  // Chemin vers ton script PHP (à adapter)
+    fetch('/svg/controller.svg')  // Chemin vers ton script PHP (à adapter)
       .then(res => res.text())
       .then(svg => {
         this.innerHTML = svg;

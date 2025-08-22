@@ -1,5 +1,5 @@
 class Position extends HTMLElement {
-  positionCallaback() {
+  connectedCallback() {
     this.innerHTML = `<div class="col-12 sidebar p-1 form-group gest_responsive">
     <h4>Positions</h4>
     <button id="afficher_positions" class="btn btn-primary mb-3 mt-3 ">Afficher

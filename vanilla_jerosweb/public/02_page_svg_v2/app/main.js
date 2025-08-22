@@ -179,7 +179,7 @@ async function chargerDonnees(url) {
 }
 
 window.addEventListener("load", () => {
-  chargerDonnees("/public/02_page_svg_v2/php/map_france.php").then(function (response) {
+  chargerDonnees("/02_page_svg_v2/php/map_france.php").then(function (response) {
     document.querySelectorAll(".loader").className += " hidden";
     document.querySelector("#chargeCarte").innerHTML = response;
     btns();

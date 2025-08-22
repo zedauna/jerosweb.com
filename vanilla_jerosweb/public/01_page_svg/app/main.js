@@ -180,7 +180,7 @@ async function chargerDonnees(url) {
 }
 
 window.addEventListener("load", () => {
-  chargerDonnees("/public/01_page_svg/php/map_france.php").then(function (response) {
+  chargerDonnees("/01_page_svg/php/map_france.php").then(function (response) {
     document.querySelectorAll(".loader").className += " hidden";
     document.querySelector("#chargeCarte").innerHTML = response;
     btns();

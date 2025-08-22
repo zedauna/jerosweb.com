@@ -1,6 +1,6 @@
-class MenuAccessiblite extends HTMLElement{
-    menuAccessibilitecallaback(){
-        this.innerHTML=`
+class MenuAccessiblite extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
             <!-- Menu d'accessibilité -->
     <ul class="a11y-nav">
         <li>
@@ -53,8 +53,8 @@ class MenuAccessiblite extends HTMLElement{
     <!-- message de pasage -->
     <div id="paysage">
         ⚠️ Attention, Votre écran est trop petit pour l'affichage, paysage possible où sur ordinateur. Merci !
-    </div>`
-    }
+    </div>`;
+  }
 }
 
-customElements.define('app-menu-accessibilite',MenuAccessiblite)
+customElements.define("app-menu-accessibilite", MenuAccessiblite);

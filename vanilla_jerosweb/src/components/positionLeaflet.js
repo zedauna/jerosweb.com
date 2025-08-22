@@ -1,5 +1,5 @@
 class PositionLeaflet extends HTMLElement {
-    positionLeafletCallback (){
+    connectedCallback() {
         this.innerHTML=`<div class="row justify-content-end"> 
     <div class="col-12 sidebar p-1 form-group gest_responsive">
         <h4>Positions</h4>

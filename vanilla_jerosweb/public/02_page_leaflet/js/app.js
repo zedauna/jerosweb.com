@@ -1,6 +1,6 @@
 // importation des modules
 
-import { controlerCarte, controlerCarteCopy } from "/public/layer.js";
+import { controlerCarte, controlerCarteCopy } from "/layer.js";
 
 import {
   markColor,
@@ -8,7 +8,7 @@ import {
   CentreMap,
   createMap,
   createCircle,
-} from "/public/map.js";
+} from "/map.js";
 
 //Les variables par defaut
 var map = null;
@@ -23,14 +23,14 @@ const centre_france = {
 };
 
 //Personnalisation des icons
-export let icoRed = markColor("/public/02_page_leaflet/img/icon/marker-red.svg");
-export let icoGreen = markColor("/public/02_page_leaflet/img/icon/marker-green.svg");
-export let icoBlue = markColor("/public/02_page_leaflet/img/icon/marker-blue.svg");
-export let icoOrange = markColor("/public/02_page_leaflet/img/icon/marker-orange.svg");
-export let icoPurple = markColor("/public/02_page_leaflet/img/icon/marker-purple.svg");
-export let icoYellow = markColor("/public/02_page_leaflet/img/icon/marker-yellow.svg");
-export let icoIndigo = markColor("/public/02_page_leaflet/img/icon/Marker_metropole.svg");
-export let icoCarca = markColor("/public/02_page_leaflet/img/icon/Marker_carcassonne.svg");
+export let icoRed = markColor("/02_page_leaflet/img/icon/marker-red.svg");
+export let icoGreen = markColor("/02_page_leaflet/img/icon/marker-green.svg");
+export let icoBlue = markColor("/02_page_leaflet/img/icon/marker-blue.svg");
+export let icoOrange = markColor("/02_page_leaflet/img/icon/marker-orange.svg");
+export let icoPurple = markColor("/02_page_leaflet/img/icon/marker-purple.svg");
+export let icoYellow = markColor("/02_page_leaflet/img/icon/marker-yellow.svg");
+export let icoIndigo = markColor("/02_page_leaflet/img/icon/Marker_metropole.svg");
+export let icoCarca = markColor("/02_page_leaflet/img/icon/Marker_carcassonne.svg");
 
 //Metropoles
 const Paris = L.marker([48.856697, 2.351462], {
@@ -65,7 +65,7 @@ export var map = new L.map("map", {
 });
 
 let controlerMarqueurs = {
-  "Métropoles <img src='/public/02_page_leaflet/img/icon/Marker_metropole.svg' width = '20px'/>":
+  "Métropoles <img src='/02_page_leaflet/img/icon/Marker_metropole.svg' width = '20px'/>":
     Grandes_villes,
 };
 
@@ -168,7 +168,7 @@ var logoProjet = L.control({
 
 logoProjet.onAdd = function (map) {
   var img = L.DomUtil.create("img");
-  img.src = "/public/02_page_leaflet/img/globe.gif";
+  img.src = "/02_page_leaflet/img/globe.gif";
   img.style.width = "3em";
   return img;
 };
@@ -202,9 +202,9 @@ function fct_route() {
       [],
       {
         createMarker: function (i, wp, nWps) {
-          let depart = markColor("/public/02_page_leaflet/img/icon/marker-red.svg");
-          let dest = markColor("/public/02_page_leaflet/img/icon/marker-green.svg");
-          let intermediaire = markColor("/public/02_page_leaflet/img/icon/marker-inter.svg");
+          let depart = markColor("/02_page_leaflet/img/icon/marker-red.svg");
+          let dest = markColor("/02_page_leaflet/img/icon/marker-green.svg");
+          let intermediaire = markColor("/02_page_leaflet/img/icon/marker-inter.svg");
 
           if (i == 0) {
             return L.marker(wp.latLng, {
