@@ -12,6 +12,12 @@
     "vite": "^7.1.2"
   },
   "dependencies": {
-    "navigo": "^8.11.1"
+    "@turf/turf": "^7.2.0",
+    "geolib": "^3.3.4",
+    "gsap": "^3.13.0",
+    "navigo": "^8.11.1",
+    "notify": "^0.1.0",
+    "snowflakes": "^1.0.6",
+    "velocity": "^0.7.3"
   }
 }

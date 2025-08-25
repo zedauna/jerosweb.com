@@ -13,12 +13,24 @@
 
     <title>SIG WEBMAPPING : SVG</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/libs/notify/notyf.min.css">
+    <link rel="stylesheet" href="/public/css/grid.css">
+    <link rel="stylesheet" href="/public/01_page_svg/css/style.css">
 
-    <link rel="stylesheet" href="/libs/notify/notyf.min.css">
-    <link rel="stylesheet" href="/css/grid.css">
-    <link rel="stylesheet" href="/01_page_svg/css/style.css">
+    <script src="/src/libs/autocomplete/autocomplete.min.js"></script>
+    <script src="/src/libs/geolib/geolib.min.js"></script>
+    <script src="/src/libs/turf/turf.min.js"></script>
+    <script src="/src/libs/notify/notyf.min.js"></script>
+    <script src="/src/libs/drag/interact.min.js"></script>
+    <script src="/src/libs/velocity/velocity.min.js"></script>
+    <script src="/src/libs/velocity/velocity.ui.min.js"></script>
+    <script src="/src/libs/gsap/gsap.min.js"></script>
+    <script src="/src/libs/gsap/TweenMax.min.js"></script>
+    <script src="/src/libs/gsap/Draggable.min.js"></script>
+    <script src="/src/libs/snowflakes/snowflakes.min.js"></script>
+
+    <script src="/src/pages/01_page_svg/app/color.js"></script>
+    <script src="/src/pages/01_page_svg/app/script.js"></script>
 
     <!-- Google tag (gtag.js) 21/12/2023-->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7V3VDCF3PS"></script>
@@ -57,7 +69,7 @@
                 <div class="col-12">
 
                     <!-- <?php require './01_page_svg/menu_svg.php'?> -->
-                    <app-menu-navbar-svg></app-menu-navbar-svg>
+                    <app-menu-navbar></app-menu-navbar>
                 </div>
             </div>
             <!-- nav d'ergonomie -->
@@ -107,27 +119,6 @@
             <app-footer></app-footer>
         </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
-        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
-        </script>
-
-    <script src="/libs/autocomplete/autocomplete.min.js"></script>
-    <script src="/libs/geolib/geolib.min.js"></script>
-    <script src="/libs/turf/turf.min.js"></script>
-    <script src="/libs/notify/notyf.min.js"></script>
-    <script src="/libs/drag/interact.min.js"></script>
-    <script src="/libs/velocity/velocity.min.js"></script>
-    <script src="/libs/velocity/velocity.ui.min.js"></script>
-    <script src="/libs/gsap/gsap.min.js"></script>
-    <script src="/libs/gsap/TweenMax.min.js"></script>
-    <script src="/libs/gsap/Draggable.min.js"></script>
-    <script src="/libs/snowflakes/snowflakes.min.js"></script>
-
-    <script src="/01_page_svg/app/color.js"></script>
-    <script src="/01_page_svg/app/main.js"></script>
-
 </body>
 
 </html>

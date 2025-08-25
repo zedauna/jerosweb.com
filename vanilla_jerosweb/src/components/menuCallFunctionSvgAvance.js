@@ -27,7 +27,6 @@ class MenuCallFunctionSvgAvance extends HTMLElement {
     </div>
 </div>
 <div>
-    <!--<?php require './02_page_svg_v2/php/modal_aide.php'?>-->
     <app-modal-aide-svg></app-modal-aide-svg>
 </div>`;
   }

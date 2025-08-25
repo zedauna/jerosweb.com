@@ -1,4 +1,4 @@
-class SidebarFunctionLeaflet extends HTMLElement {
+export default class SidebarFunctionLeaflet extends HTMLElement {
     connectedCallback() {
         this.innerHTML=`<div class="row justify-content-start gest_responsive">
         <div class="form-group perso_div w-70 item_off" id='active_distance'>
@@ -105,6 +105,4 @@ class SidebarFunctionLeaflet extends HTMLElement {
         </div>
     </div>`
     }
-}
-
-customElements.define('app-sidebar-function-leaflet',SidebarFunctionLeaflet);
+};

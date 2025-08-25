@@ -1,4 +1,4 @@
-class Footer extends HTMLElement {
+export default class Footer extends HTMLElement {
     connectedCallback(){
         this.innerHTML=`<div class="row align-items-center justify-content-around">
     <div class="col-12 perso_header_footer" style="color:white">
@@ -8,5 +8,4 @@ class Footer extends HTMLElement {
     </div>
 </div>`
     }
-}
-customElements.define('app-footer',Footer);
+};

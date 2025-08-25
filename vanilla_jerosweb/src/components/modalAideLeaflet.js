@@ -1,4 +1,4 @@
-class ModalAideLeaflet extends HTMLElement {
+export default class ModalAideLeaflet extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `<!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -57,6 +57,4 @@ class ModalAideLeaflet extends HTMLElement {
     </div>
 </div>`;
   }
-}
-
-customElements.define("app-modal-aide-leaflet", ModalAideLeaflet);
+};

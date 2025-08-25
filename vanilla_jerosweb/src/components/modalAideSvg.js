@@ -1,4 +1,4 @@
-class ModalAideSvg extends HTMLElement {
+export default class ModalAideSvg extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `<!-- Modal -->
 
@@ -102,6 +102,4 @@ class ModalAideSvg extends HTMLElement {
 
 </div>`;
   }
-}
-
-customElements.define("app-modal-aide-svg", ModalAideSvg);
+};

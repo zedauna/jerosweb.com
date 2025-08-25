@@ -1,5 +1,5 @@
-class MenuCallFunctionLeaflet extends HTMLElement{
-    menuCallFunctionLeafletCallacback(){
+export default class MenuCallFunctionLeaflet extends HTMLElement{
+    connectedCallback(){
         this.innerHTML=`<div class="col-12">
     <nav class="navbar navbar-light blue lighten-5 gest_responsive">
         <form class="form-inline">
@@ -15,4 +15,3 @@ class MenuCallFunctionLeaflet extends HTMLElement{
 </div>`
     }
 }
-customElements.define('app-menu-call-function-leaflet',MenuCallFunctionLeaflet);

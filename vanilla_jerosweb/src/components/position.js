@@ -1,4 +1,4 @@
-class Position extends HTMLElement {
+export default class Position extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `<div class="col-12 sidebar p-1 form-group gest_responsive">
     <h4>Positions</h4>
@@ -10,6 +10,4 @@ class Position extends HTMLElement {
     <ul id="points" class="list-group p-3"></ul>
 </div>`;
   }
-}
-
-customElements.define("app-position", Position);
+};

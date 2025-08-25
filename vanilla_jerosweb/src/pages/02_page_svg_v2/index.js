@@ -1,4 +1,4 @@
-export function render() {
+export function renderSvgAvance() {
   return fetch('./src/pages/02_page_svg_v2/index.html')
     .then(res => {
       if (!res.ok) {

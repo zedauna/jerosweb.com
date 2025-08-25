@@ -1,4 +1,4 @@
-class Legende extends HTMLElement {
+export default  class Legende extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
             <div class="col-12 sidebar">
@@ -62,6 +62,4 @@ class Legende extends HTMLElement {
     </div>
         `;
   }
-}
-
-customElements.define("app-legende", Legende);
+};

@@ -1,4 +1,4 @@
-class SidebarFunction extends HTMLElement {
+export default class SidebarFunction extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `<div class="row justify-content-end gest_responsive">
             <!-- rechercher -->
@@ -72,6 +72,4 @@ class SidebarFunction extends HTMLElement {
             </div>
         </div>`;
   }
-}
-
-customElements.define("app-sidebar-function", SidebarFunction);
+};

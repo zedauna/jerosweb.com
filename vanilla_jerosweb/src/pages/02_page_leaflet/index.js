@@ -1,4 +1,4 @@
-export function render() {
+export function renderLeaflet() {
   return fetch('./src/pages/02_page_leaflet/index.html')
     .then(res => {
       if (!res.ok) {

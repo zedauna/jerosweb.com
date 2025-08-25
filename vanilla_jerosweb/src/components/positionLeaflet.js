@@ -1,4 +1,4 @@
-class PositionLeaflet extends HTMLElement {
+export default class PositionLeaflet extends HTMLElement {
     connectedCallback() {
         this.innerHTML=`<div class="row justify-content-end"> 
     <div class="col-12 sidebar p-1 form-group gest_responsive">
@@ -13,10 +13,8 @@ class PositionLeaflet extends HTMLElement {
         <button id="reog" class="btn btn-primary mb-3 mt-3">Réog</button>
         <button id="info_reset" class="btn btn-primary mb-3 mt-3 ">Reset</button>
         <ul id="points" class="list-group p-3"></ul>
-        <?php require './02_page_leaflet/php/modal_aide.php'?>
+        <app-modal-aide-leaflet></app-modal-aide-leaflet>
     </div>
 </div>`
     }
-}
-
-customElements.define('app-position-leaflet',PositionLeaflet);
+};

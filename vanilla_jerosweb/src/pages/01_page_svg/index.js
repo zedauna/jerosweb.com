@@ -3,7 +3,7 @@
 //   document.getElementById('app').innerHTML = '<app-legende></app-legende>';
 // }
 
-export function render() {
+export function renderSvg() {
   return fetch('./src/pages/01_page_svg/index.html')
     .then(res => {
       if (!res.ok) {

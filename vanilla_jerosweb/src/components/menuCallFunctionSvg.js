@@ -1,4 +1,4 @@
-class MenuCallFunctionSvg extends HTMLElement {
+export default class MenuCallFunctionSvg extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `<div class="row">
     <div class="col-6">
@@ -27,9 +27,8 @@ class MenuCallFunctionSvg extends HTMLElement {
     </div>
 </div>
 <div>
-    <?php require './01_page_svg/php/modal_aide.php'?>
+    <app-modal-aide-svg></app-modal-aide-svg>
 </div>`;
   }
-}
+};
 
-customElements.define("app-menu-call-function-svg", MenuCallFunctionSvg);

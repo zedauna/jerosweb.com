@@ -1,4 +1,4 @@
-class MenuAccessibliteLeaflet extends HTMLElement {
+export default class MenuAccessibliteLeaflet extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `   
     <!-- Menu d'accessibilité -->
@@ -43,9 +43,6 @@ class MenuAccessibliteLeaflet extends HTMLElement {
         ⚠️ Attention, Votre écran est trop petit pour l'affichage, paysage possible où sur ordinateur. Merci !
     </div>`;
   }
-}
+};
 
-customElements.define(
-  "app-menu-accessibilite-leaflet",
-  MenuAccessibliteLeaflet
-);
+

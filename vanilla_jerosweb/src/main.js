@@ -1,20 +1,29 @@
-import './style.css';
-import { router } from './router.js';
-import './components/home.js';
-import './components/footer.js';
-import './components/legende.js';
-import './components/menuAccessibilite.js';
-import './components/menuAccessibiliteLeaflet.js';
-import './components/menuCallFunctionLeaflet.js';
-import './components/menuCallFunctionSvg.js';
-import './components/menuCallFunctionSvgAvance.js';
-import './components/menuNavBarSvg.js';
-import './components/menuNavBarSvgAvance.js';
-import './components/modalAideLeaflet.js';
-import './components/modalAideSvg.js';
-import './components/position.js';
-import './components/positionAvance.js';
-import './components/positionLeaflet.js';
-import './components/sidebarFunction.js';
-import './components/sidebarFunctionLeaflet.js';
-import './components/svgController.js';
+import "./style.css";
+import { setupRouter} from "./pages/router.js";
+import "./components/index.js";
+
+document.addEventListener('DOMContentLoaded', () => {
+  setupRouter();
+});
+
+// import "/public/libs/autocomplete/autocomplete.min.js";
+// import * as geolib from "/public/libs/geolib/geolib.min.js";
+// import "/public/libs/turf/turf.min.js";
+// import "/public/libs/velocity/velocity.min.js";
+// import "/public/libs/velocity/velocity.ui.min.js";
+// import "/public/libs/gsap/gsap.min.js";
+
+// import {geolib} from "geolib";
+// import * as turf from '@turf/turf';
+// import {velocity} from "velocity";
+// import {gsap} from "gsap";
+
+// import "/public/libs/notify/notyf.min.js";
+// import "/public/libs/drag/interact.min.js";
+// import "/public/libs/gsap/TweenMax.min.js";
+// import "/public/libs/gsap/Draggable.min.js";
+// import "/public/libs/snowflakes/snowflakes.min.js";
+
+// import "/public/01_page_svg/app/main.js";
+// import "/public/01_page_svg/app/color.js";
+

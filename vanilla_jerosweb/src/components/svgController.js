@@ -1,5 +1,5 @@
 // svg-controller.js
-class SvgController extends HTMLElement {
+export default class SvgController extends HTMLElement {
   connectedCallback() {
     fetch('/svg/controller.svg')  // Chemin vers ton script PHP (à adapter)
       .then(res => res.text())
@@ -8,5 +8,4 @@ class SvgController extends HTMLElement {
         // Ici, tu peux ajouter des interactions JS si besoin
       });
   }
-}
-customElements.define('svg-controller', SvgController);
+};
