@@ -5,7 +5,7 @@ export default class MenuCallFunctionSvgAvance extends HTMLElement {
         <nav class="navbar navbar-light blue lighten-5 justify-content-start gest_responsive">
             <form class="form-inline">
                 <button type=" button" 
-                id="explication_svg" 
+                id="explication_svg_avance" 
                 class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Mode d'emploi 🧐!
                 </button>

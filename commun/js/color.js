@@ -620,20 +620,17 @@ var colors = [
 
 function getRandomInteger(min, max) {
   min = Math.ceil(min);
-
   max = Math.floor(max);
-
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
 changeColorRandom = (id = "#colorChange", duration = 1000) => {
   return window.setInterval(function () {
     var color = colors[getRandomInteger(0, colors.length)];
-
     document.querySelector(id).style.color = color;
   }, duration);
 };
 
 changeColorRandom((id = "#explication_svg"), (duration = 1000));
-
-// changeColorRandom(id = '#explication_leaflet', duration = 1000);
+changeColorRandom(id = '#explication_leaflet', duration = 1000);
+changeColorRandom(id = '#explication_svg_avance', duration = 1000);
