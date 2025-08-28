@@ -203,9 +203,10 @@ jerosweb
 
 ```
 ### 📦 Installation & Lancement
-
+```bash
 git clone https://github.com/zedauna/jerosweb.com.git
 cd <jerosweb.com>
+```
 
 ### ✨ Exemple de Web Component
 ```js
