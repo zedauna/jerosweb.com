@@ -17,18 +17,6 @@ switch ($page) {
     case 'leaflet':
         require_once '02_page_leaflet/index.php';
         break;
-//globe
-    case 'globe_1':
-        require_once '03_globe/index.php';
-        break;
-    case 'globe_2':
-        require_once '04_globe/index.php';
-        break;
-
-//nuage de mots
-    case 'nuage_mots':
-        require_once '05_nuage_mots/index.php';
-        break;
 // cv
     case 'cv':
         require_once 'cv/index.php';
