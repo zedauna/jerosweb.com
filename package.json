@@ -1,0 +1,24 @@
+{
+  "name": "jerosweb",
+  "version": "1.0.0",
+  "description": "Ce projet est la **refonte d’un ancien site web réalisé en PHP** lors de ma formation académique.  \r À l’époque, l’architecture reposait sur :\r - `include` et `require` pour réutiliser les éléments communs (header, footer, navigation…)\r - un mélange de logique PHP et HTML\r - une approche monolithique difficile à maintenir\r - une nécessité d'avoir un serveur apatche",
+  "main": "index.js",
+  "devDependencies": {
+    "tree-node-cli": "^1.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tree": "tree . -I 'node_modules' -L 4 > tree.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zedauna/jerosweb.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zedauna/jerosweb.com/issues"
+  },
+  "homepage": "https://github.com/zedauna/jerosweb.com#readme"
+}

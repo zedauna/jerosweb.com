@@ -69,27 +69,260 @@ Aujourd’hui, le projet est **modernisé** en utilisant :
 
 ---
 
-## 📂 Structure du projet
+## 📂 Structure du projet (PHP)
 ```bash
-├── src/
-│   ├── components/         # Web Components (header, footer, nav, card…)
-│   │   ├── app-header.js
-│   │   ├── app-footer.js
-│   │   └── app-nav.js
-│   ├── pages/              # Pages HTML (home, about, contact…)
-│   │   ├── index.html
-│   │   ├── about.html
-│   │   └── contact.html
-│   ├── assets/             # Images, CSS, fonts…
-│   ├── main.js             # Point d’entrée
-│   └── styles.css
+jerosweb
 ├── README.md
-└── package.json
+├── node_modules
+│   └── tree-node-cli
+├── package.json
+├── php
+│   ├── 01_page_svg
+│   │   ├── app
+│   │   │   ├── color.js
+│   │   │   ├── color.min.js
+│   │   │   ├── main.js
+│   │   │   └── main.min.js
+│   │   ├── css
+│   │   │   └── style.css
+│   │   ├── index.php
+│   │   ├── menu_svg.php
+│   │   └── php
+│   │       ├── map_france.php
+│   │       └── modal_aide.php
+│   ├── 02_page_leaflet
+│   │   ├── css
+│   │   │   └── style.css
+│   │   ├── default_index.html
+│   │   ├── img
+│   │   │   ├── entreprise
+│   │   │   ├── globe.gif
+│   │   │   ├── icon
+│   │   │   ├── locate.jpg
+│   │   │   ├── locate.png
+│   │   │   ├── location.jpg
+│   │   │   └── routing
+│   │   ├── index.php
+│   │   ├── js
+│   │   │   ├── app.js
+│   │   │   ├── app.min.js
+│   │   │   ├── color.js
+│   │   │   ├── color.min.js
+│   │   │   ├── interaction_fetch.js
+│   │   │   ├── interaction_fetch.min.js
+│   │   │   ├── layer.js
+│   │   │   ├── layer.min.js
+│   │   │   ├── main.js
+│   │   │   ├── main.min.js
+│   │   │   ├── map.js
+│   │   │   └── map.min.js
+│   │   ├── json
+│   │   │   ├── departement.json
+│   │   │   ├── departement_centroid.json
+│   │   │   └── region.json
+│   │   ├── menu_leaflet.php
+│   │   └── php
+│   │       └── modal_aide.php
+│   ├── 02_page_svg_v2
+│   │   ├── app
+│   │   │   ├── color.js
+│   │   │   ├── color.min.js
+│   │   │   ├── main.js
+│   │   │   └── main.min.js
+│   │   ├── css
+│   │   │   └── style.css
+│   │   ├── index.php
+│   │   ├── menu_svg_avanc.php
+│   │   └── php
+│   │       ├── map_france.php
+│   │       ├── modal_aide.php
+│   │       ├── region_11.php
+│   │       ├── region_24.php
+│   │       ├── region_27.php
+│   │       ├── region_28.php
+│   │       ├── region_32.php
+│   │       ├── region_44.php
+│   │       ├── region_52.php
+│   │       ├── region_53.php
+│   │       ├── region_75.php
+│   │       ├── region_76.php
+│   │       ├── region_84.php
+│   │       ├── region_93.php
+│   │       └── region_94.php
+│   ├── commun
+│   │   ├── css
+│   │   │   └── grid.css
+│   │   ├── js
+│   │   │   └── libs
+│   │   └── php
+│   │       ├── footer.php
+│   │       ├── legende.php
+│   │       ├── menu_accessibilite.php
+│   │       ├── menu_accessibilite_leaflet.php
+│   │       ├── menu_call_function_leaflet.php
+│   │       ├── menu_call_function_svg.php
+│   │       ├── menu_call_function_svg_avance.php
+│   │       ├── position.php
+│   │       ├── position_leaflet.php
+│   │       ├── positions.php
+│   │       ├── sidebar_function.php
+│   │       └── sidebar_function_leaflet.php
+│   ├── data_analyst
+│   │   ├── Projet-DataScience-Machine Learning.html
+│   │   └── analyse_modelisation.html
+│   ├── db
+│   │   └── db.json
+│   ├── google87383e78882c463c.html
+│   ├── googlebe3390365128e1ae.html
+│   ├── index.php
+│   └── svg
+│       ├── Spinner-2.gif
+│       ├── controller.svg
+│       ├── home.svg
+│       ├── home_V.svg
+│       └── loader.svg
+├── pnpm-lock.yaml
+└── tree.md
+```
+
+## 📂 Structure du projet (Web Components)
+```bash
+jerosweb
+├── 01_page_svg
+│   ├── app
+│   │   └── main.js
+│   └── css
+│       └── style.css
+├── 02_page_leaflet
+│   ├── css
+│   │   └── style.css
+│   ├── img
+│   │   ├── globe.gif
+│   │   ├── icon
+│   │   │   ├── Marker_carcassonne.svg
+│   │   │   ├── Marker_metropole.svg
+│   │   │   ├── marker-blue.svg
+│   │   │   ├── marker-green.svg
+│   │   │   ├── marker-inter.svg
+│   │   │   ├── marker-orange.svg
+│   │   │   ├── marker-purple.svg
+│   │   │   ├── marker-red.svg
+│   │   │   └── marker-yellow.svg
+│   │   ├── locate.jpg
+│   │   ├── locate.png
+│   │   ├── location.jpg
+│   │   └── routing
+│   │       ├── REMOVE
+│   │       ├── bike.png
+│   │       ├── car.png
+│   │       ├── foot.png
+│   │       ├── hike.png
+│   │       ├── mtb.png
+│   │       ├── racingbike.png
+│   │       ├── reverse.png
+│   │       ├── scooter.png
+│   │       ├── small_truck.png
+│   │       └── truck.png
+│   ├── index.html
+│   ├── js
+│   │   ├── app.js
+│   │   ├── interaction_fetch.js
+│   │   ├── layer.js
+│   │   ├── main.js
+│   │   └── map.js
+│   └── json
+│       ├── departement.json
+│       ├── departement_centroid.json
+│       └── region.json
+├── 02_page_svg_v2
+│   ├── app
+│   │   └── main.js
+│   ├── css
+│   │   └── style.css
+│   └── index.html
+├── README
+├── commun
+│   ├── css
+│   │   └── grid.css
+│   └── js
+│       ├── color.js
+│       ├── color.min.js
+│       └── libs
+│           ├── autocomplete
+│           ├── drag
+│           ├── geolib
+│           ├── google
+│           ├── gsap
+│           ├── jquery
+│           ├── leaflet
+│           ├── notify
+│           ├── plugin_leaflet
+│           ├── snowflakes
+│           ├── terraformer
+│           ├── turf
+│           └── velocity
+├── components   #Web Components
+│   ├── footer.js
+│   ├── home.js
+│   ├── index.js
+│   ├── legende.js
+│   ├── menuAccessibilite.js
+│   ├── menuAccessibiliteLeaflet.js
+│   ├── menuCallFunctionLeaflet.js
+│   ├── menuCallFunctionSvg.js
+│   ├── menuCallFunctionSvgAvance.js
+│   ├── menuNavBar.js
+│   ├── menuNavBarAvance.js
+│   ├── menuNavBarLeaflet.js
+│   ├── modalAideLeaflet.js
+│   ├── modalAideSvg.js
+│   ├── position.js
+│   ├── positionAvance.js
+│   ├── positionLeaflet.js
+│   ├── sidebarFunction.js
+│   ├── sidebarFunctionLeaflet.js
+│   ├── svgController.js
+│   └── svgControllerAvance.js
+├── data
+│   ├── map_france.svg
+│   ├── region_11.svg
+│   ├── region_24.svg
+│   ├── region_27.svg
+│   ├── region_28.svg
+│   ├── region_32.svg
+│   ├── region_44.svg
+│   ├── region_52.svg
+│   ├── region_53.svg
+│   ├── region_75.svg
+│   ├── region_76.svg
+│   ├── region_84.svg
+│   ├── region_93.svg
+│   └── region_94.svg
+├── data_analyst
+│   ├── Projet-DataScience-Machine Learning.html
+│   └── analyse_modelisation.html
+├── db
+│   └── db.json
+├── gitignore
+├── index.html
+├── node_modules
+│   └── tree-node-cli
+├── package.json
+├── pnpm-lock.yaml
+├── svg
+│   ├── Spinner-2.gif
+│   ├── controller.svg
+│   ├── home.svg
+│   ├── home_V.svg
+│   └── loader.svg
+└── tree.md
+
 ```
 ### 📦 Installation & Lancement
-
+```bash
 git clone https://github.com/zedauna/jerosweb.com.git
 cd <jerosweb.com>
+```
 
 ### ✨ Exemple de Web Component
 ```js
