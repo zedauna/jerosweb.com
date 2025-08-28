@@ -1,0 +1,24 @@
+{
+  "name": "jerosweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tree": "tree . -I 'node_modules' -L 4 > tree.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zedauna/jerosweb.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zedauna/jerosweb.com/issues"
+  },
+  "homepage": "https://github.com/zedauna/jerosweb.com#readme",
+  "devDependencies": {
+    "tree-node-cli": "^1.6.0"
+  }
+}

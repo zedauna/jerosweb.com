@@ -1,2 +1,0 @@
-# Mise en place des Web Components afin de remplacer les include / require de PHP
-# Importation avec DEFER pour soulager le navigateur dans le chargement
